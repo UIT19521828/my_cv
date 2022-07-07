@@ -1,9 +1,21 @@
-html,
-body {
+html{
+  background-color: #12181B;
+  font-size: 15px;
+}
+html,body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+html,body,
+#root{
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 9px;
+  }
 }
 
 a {
