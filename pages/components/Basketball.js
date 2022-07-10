@@ -3,14 +3,11 @@ import { motion } from "framer-motion";
 
 const SvgBasketball = (props) => (
   <motion.svg
-    width="17rem"
-    height="17rem"
+    width="20rem"
+    height="20rem"
     viewBox="0 0 200 160"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    animate={{
-      scale: 1.3,
-    }}
     {...props}
   >
     <g clipPath="url(#a)">

@@ -3,6 +3,7 @@ import HomeScene from './HomeScene'
 import Image from 'next/image'
 import AboutScene from './AboutScene'
 import Loader from './Loader'
+import SkillScene from './SkillScene'
 
 import styles from '../styles/Index.module.scss'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
@@ -25,7 +26,7 @@ export default function Home() {
           </motion.div>
         ):(
           <div>                      
-            <Parallax pages={3}>
+            <Parallax pages={5} heigh='auto'>
               <ParallaxLayer
                 offset={0} className={styles.logo} speed={0.3}>
                 <picture>
@@ -37,6 +38,7 @@ export default function Home() {
               </ParallaxLayer>
               <HomeScene/>
               <AboutScene/>
+              <SkillScene/>
             </Parallax>
           </div>
         )}
