@@ -69,13 +69,13 @@ export default function HomeScene() {
               <text>&emsp;&emsp;&#123;</text><br/>
               <text>&emsp;&emsp;&emsp;&emsp;Console.</text><i>WriteLine</i><text>&#40;</text>
                 <code>&#34;Hello World&#34;</code><text>&#41;;</text><br/>
-              &emsp;&emsp;&emsp;&emsp;<i>MyCV</i> <text>phm = </text> new <i>MyCV</i><text>();</text><br/>
+              &emsp;&emsp;&emsp;&emsp;<i>MyPFM</i> <text>phm = </text> new <i>MyPFM</i><text>();</text><br/>
               <text>&emsp;&emsp;&#125;</text><br/>
               <text>&#125;</text><br/>
-              class <span>MyCV</span><br/>
+              class <span>MyPFM</span><br/>
               <text>&#123;</text><br/>
               &emsp;&emsp;public void <i>AboutMe</i><text>()&#123;&#125;</text><br/>
-              &emsp;&emsp;public void <i>Experience</i><text>()&#123;&#125;</text><br/>
+              &emsp;&emsp;public void <i>Skill</i><text>()&#123;&#125;</text><br/>
               &emsp;&emsp;public void <i>Contract</i><text>()&#123;&#125;</text><br/>
               <text>&#125;</text><br/>
             </p> 

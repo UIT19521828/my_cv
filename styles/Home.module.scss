@@ -44,7 +44,7 @@
   padding: 0.5rem 2rem 0 2rem;
   margin: 2rem 1rem 0 3rem;
   border-radius: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .card p{
   color: #A77DBB;
@@ -155,7 +155,7 @@
 
 .avatar h2{
   position: relative;
-  font-size: 1em;
+  font-size: 0.9rem;
   text-align: center;
   color: #ffffff;
   font-weight: 500;
@@ -165,7 +165,7 @@
 
 .avatar h2 span{
   font-weight: 300;
-  font-size: 1em;
+  font-size: 0.8rem;
 }
 
 .avatar a{
@@ -209,7 +209,7 @@
 
 .snowcontainer{
   display: flex;
-  height: 610px;
+  height: 630px;
   flex-direction: column;
   position: relative;
   padding-top: 10rem;
@@ -293,7 +293,7 @@
 .snow span:nth-child(14) {animation-delay: 1.7s;}
 
 .svgsnow:hover{
-  animation: rotate 3s linear infinite;
+  animation: rotate 4s linear infinite;
 }
 @keyframes rotate{
   0%{
