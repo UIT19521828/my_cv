@@ -6,3 +6,14 @@
 .prlax{
     overflow: hidden;
 }
+.working_on{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.5rem;
+    .img{
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+    }
+}

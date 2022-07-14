@@ -17,7 +17,7 @@ function Tilt(props) {
 }
 
 
-export default function HomeScene() {
+export default function HomeScene({scroll}) {
   return (
     <Container fluid='true'>
       <Row>
@@ -65,17 +65,21 @@ export default function HomeScene() {
             <p>
               class <span>Program</span><br/>
               <text>&#123;</text><br/>
-              &emsp;&emsp;static void <i>Main</i><text>(</text>string<text>[] args)</text><br/>
+              &emsp;&emsp;static void <b>Main</b><text>(</text>string<text>[] args)</text><br/>
               <text>&emsp;&emsp;&#123;</text><br/>
-              <text>&emsp;&emsp;&emsp;&emsp;Console.</text><i>WriteLine</i><text>&#40;</text>
+              <text>&emsp;&emsp;&emsp;&emsp;Console.</text><b>WriteLine</b><text>&#40;</text>
                 <code>&#34;Hello World&#34;</code><text>&#41;;</text><br/>
-              &emsp;&emsp;&emsp;&emsp;<i>MyPFM</i> <text>phm = </text> new <i>MyPFM</i><text>();</text><br/>
+              &emsp;&emsp;&emsp;&emsp;<b>MyPFM</b> <text>phm = </text> new <b>MyPFM</b><text>();</text><br/>
               <text>&emsp;&emsp;&#125;</text><br/>
               <text>&#125;</text><br/>
               class <span>MyPFM</span><br/>
               <text>&#123;</text><br/>
-              &emsp;&emsp;public void <i>AboutMe</i><text>()&#123;&#125;</text><br/>
-              &emsp;&emsp;public void <i>Skill</i><text>()&#123;&#125;</text><br/>
+              &emsp;&emsp;public void <i
+                  onClick={()=> scroll.current.scrollTo(1.1)}
+                >AboutMe</i><text>()&#123;&#125;</text><br/>
+              &emsp;&emsp;public void <i
+                  onClick={()=> scroll.current.scrollTo(2.4)}
+                >Skill</i><text>()&#123;&#125;</text><br/>
               &emsp;&emsp;public void <i>Contract</i><text>()&#123;&#125;</text><br/>
               <text>&#125;</text><br/>
             </p> 

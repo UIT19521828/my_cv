@@ -7,10 +7,12 @@ import styles from '../styles/Index.module.scss'
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const scroll = useRef(null);
 
   return (
     <AnimatePresence>
@@ -24,8 +26,8 @@ export default function Home() {
             <Loader setLoading={setLoading}/>
           </motion.div>
         ):(
-          <div >                      
-            <Parallax pages={5} heigh='auto' className={styles.prlax}>
+          <div>                      
+            <Parallax pages={5} heigh='auto' className={styles.prlax} ref={scroll}>
               <ParallaxLayer
                 offset={0} className={styles.logo} speed={0.3}>
                 <picture>
@@ -36,9 +38,14 @@ export default function Home() {
                 </picture>
               </ParallaxLayer>
               
-            <HomeScene/>
-            <AboutScene/>
-            <SkillScene/>
+              <HomeScene scroll={scroll}/>
+              <AboutScene/>
+              <SkillScene/>
+              <div className={styles.working_on}>
+                <div className={styles.img}>
+                  <Image src='/onprogess.png' alt=''  layout='fill'/>
+                </div>
+              </div>
             </Parallax>
           </div>
         )}

@@ -37,14 +37,14 @@ export default function Loader({setLoading}) {
             onAnimationComplete={()=> setLoading(false)}
             layoutId="loading-logo"
         >
-            <svg width={110} height={260} className={styles.svgcontainerL}>
+            <svg width={110} height={270} className={styles.svgcontainerL}>
                 <defs>
                     <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%"   stopColor="#8360c3"/>
                         <stop offset="100%" stopColor="#2ebf91"/>
                     </linearGradient>
                 </defs>
-                <motion.rect width={100} height={250} stroke='url(#linear)'
+                <motion.rect width={100} height={260} stroke='url(#linear)'
                     rx={50} strokeWidth={5}
                     fill='transparent' variants={rectvar}
                     initial='init' animate='go' 
@@ -68,14 +68,14 @@ export default function Loader({setLoading}) {
                     
                 />
             </picture>
-            <svg width={110} height={260} className={styles.svgcontainerR}>
+            <svg width={110} height={270} className={styles.svgcontainerR}>
                 <defs>
                     <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%"   stopColor="#8360c3"/>
                         <stop offset="100%" stopColor="#2ebf91"/>
                     </linearGradient>
                 </defs>
-                <motion.rect width={100} height={250} stroke='url(#linear)'
+                <motion.rect width={100} height={260} stroke='url(#linear)'
                     rx={50} strokeWidth={5} fill='transparent'
                     variants={rectvar}
                     initial='init' animate='go' 

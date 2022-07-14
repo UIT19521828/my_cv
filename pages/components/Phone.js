@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '/styles/Skill.module.scss'
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { motion } from 'framer-motion';
 
 import "swiper/css";
 
@@ -16,21 +18,33 @@ const images = [
 export default function Phone() {
 
   return (
-    <Swiper
-      loop={true} spaceBetween={5}
-      grabCursor={true}
-      className={styles.phone}
-    >
-        {
-          images.map((item, index) => (
-              <SwiperSlide key={index}>
-                  <picture>
-                      <img src={item} alt="" className={styles.pic}/>
-                  </picture>
-              </SwiperSlide>
-          ))
+    <motion.div className={styles.phone}
+      initial={{
+        opacity: 0,
+        rotateY: 180,
+      }}
+      whileInView={{
+        opacity: 1,
+        rotateY: 0,
+        transition: {
+          duration: 1.5,
         }
-    </Swiper>  
+      }}
+    >
+      <Swiper
+        loop={true} spaceBetween={5}
+        grabCursor={true}
+        className={styles.pic}
+      >
+          {
+            images.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <Image src={item} alt="" layout='fill' objectFit='contain'/>
+                </SwiperSlide>
+            ))
+          }
+      </Swiper>  
+    </motion.div>
    
   )
 }

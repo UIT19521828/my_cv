@@ -55,10 +55,16 @@
 .card i{
   color: #5caeed;
   font-style: normal;
+  text-shadow: 
+        -0.2px -0.2px 0 lightslategray,  
+        0.2px -0.2px 0 lightslategray,
+        -0.2px  0.2px 0 lightslategray,
+        0.2px  0.2px 0 lightslategray;
 }
-.card a{
+.card b{
   color: #5caeed;
   font-style: normal;
+  font-weight: normal;
 }
 .card i:hover,
 .card i:focus,

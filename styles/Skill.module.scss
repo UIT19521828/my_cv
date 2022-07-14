@@ -98,6 +98,10 @@
     width: 3rem;
     position: relative;
 }
+.content{
+    overflow: hidden; 
+    position: relative;
+}
 .parag{
     color: white;
     font-size: 1.4rem;
@@ -112,6 +116,7 @@
         -1px  1px 0 #000,
         1px  1px 0 #000;
 }
+
 .phone{
     position: relative;
     width: 15rem;
@@ -122,21 +127,20 @@
         -1px -1px 0 #fff,  
         1px -1px 0 #fff,
         -1px  1px 0 #fff,
-        1px  1px 0 #fff;;
+        1px  1px 0 #fff;
+
+        .pic{
+            position: relative;
+            top: 0.7rem;
+            bottom: 1rem;
+            width: 14rem; 
+            height: 25rem;
+            background: black;
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
 }
-.pic{
-    position: absolute;
-    top: 0.7rem;
-    bottom: 1rem;
-    right: 0.5rem;
-    left: 0.5rem;
-    width: 14rem; 
-    height: 25rem;
-    background: black;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    object-fit: contain;
-}
+
 .alignRight{
     text-align: right;
     margin-left: 1.5rem;
@@ -182,7 +186,7 @@
         align-items: center;
     }
 }
-.db{
+.flexcenter{
     display: flex;
     flex-direction: column;
     justify-content: center;
